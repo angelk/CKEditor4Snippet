@@ -38,7 +38,9 @@ Example config:
 ```
 
 Will produce dialog with 3 snippets:
-France, Germany and Bulgaria
+France, Germany and Bulgaria<br/>
 Each country key is inserted in editor (FR, DE, BG)
+
 button.label: label for UI button
+
 title: title for modal window
