@@ -1,0 +1,2 @@
+CKEditor4Snipped
+================
