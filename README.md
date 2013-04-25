@@ -1,6 +1,12 @@
 CKEditor4Snipped
 ================
 
+Version 0.2
+
+Changes:<br/>
+0.2:<br/>
+added custom text for input/labels
+
 Install:
 add `config.extraPlugins = 'snipped';` in config.js file
 
