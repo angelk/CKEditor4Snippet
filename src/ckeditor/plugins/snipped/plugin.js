@@ -1,7 +1,7 @@
 /**
- * @author Angel Koilow <a.koilov@viscomp.bg> <angel.koilov@gmail.com>
+ * @author Angel Koilov <a.koilov@viscomp.bg> <angel.koilov@gmail.com>
  * @description https://github.com/angelk/CKEditor4Snipped
- * @version 0.1
+ * @version 0.2
  */
 
 CKEDITOR.plugins.add('snipped', {
