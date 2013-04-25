@@ -1,8 +1,9 @@
 CKEDITOR.dialog.add('snippedDialog', function(editor) {
 
     var title = 'Choose Snipped';
+    console.log(editor.config);
     if (editor.config.snippedConfig.title) {
-        title = config.snippedConfig.title;
+        title = editor.config.snippedConfig.title;
     }
 
     return {
