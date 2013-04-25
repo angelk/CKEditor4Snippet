@@ -2,7 +2,7 @@ CKEditor4Snipped
 ================
 
 Example config:
-<code>
+```
     config.snippedConfig =
             {
                 contents: [
@@ -28,4 +28,8 @@ Example config:
                     }
                 ]
             };
-<code>
+```
+
+Will produce dialog with 3 snippets:
+France, Germany and Bulgaria
+Each country key is inserted in editor (FR, DE, BG)
