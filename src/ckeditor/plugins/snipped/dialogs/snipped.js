@@ -1,9 +1,13 @@
 CKEDITOR.dialog.add('snippedDialog', function(editor) {
 
-    ddd = editor;
+    var title = 'Choose Snipped';
+    if (editor.config.snippedConfig.title) {
+        title = config.snippedConfig.title;
+    }
+
     return {
         // Basic properties of the dialog window: title, minimum size.
-        title: 'Abbreviation Properties',
+        title: title,
         minWidth: 400,
         minHeight: 200,
         // Dialog window contents definition.
@@ -14,15 +18,12 @@ CKEDITOR.dialog.add('snippedDialog', function(editor) {
             // The context of this function is the dialog object itself.
             // http://docs.ckeditor.com/#!/api/CKEDITOR.dialog
 
-            var selectedValue = this.getValueOf('tab-basic', 'items');
+            var selectedValue = this.getValueOf('tab-snippets', 'items');
+//          Validator notEmpty doesn't work for radio buttons, uncomment these lines for ugly fix :)
 //			if (!selectedValue) {
-//				ddd = this;
 //				return false;
 //			}
-            console.log(selectedValue);
-            this._.editor.insertHtml(selectedValue);
-
-            return;
+            editor.insertHtml(selectedValue);
         }
     };
 });

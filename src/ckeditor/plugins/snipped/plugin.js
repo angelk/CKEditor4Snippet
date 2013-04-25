@@ -1,3 +1,9 @@
+/**
+ * @author Angel Koilow <a.koilov@viscomp.bg> <angel.koilov@gmail.com>
+ * @description https://github.com/angelk/CKEditor4Snipped
+ * @version 0.1
+ */
+
 CKEDITOR.plugins.add('snipped', {
     icons: 'snipped',
     init: function(editor) {
@@ -7,12 +13,15 @@ CKEDITOR.plugins.add('snipped', {
             return;
         }
 
-        console.log(snippedConfig);
+        var buttonLabel = 'Insert Snipped';
+        if (snippedConfig.button && snippedConfig.button.label) {
+            buttonLabel = snippedConfig.button.label;
+        }
 
         editor.addCommand('showSnipped', new CKEDITOR.dialogCommand('snippedDialog'));
 
         editor.ui.addButton('snipped', {
-            label: 'snipped',
+            label: buttonLabel,
             command: 'showSnipped',
             toolbar: 'insert'
         });
