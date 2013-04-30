@@ -1,7 +1,13 @@
 CKEditor4Snipped
 ================
 
-Version 0.2
+Version 0.3
+
+allow callbackConfig
+
+added option
+noAvailableSnippets: 'no snippets'
+for default text when there are no snippets
 
 Changes:<br/>
 0.2:<br/>

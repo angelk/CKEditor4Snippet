@@ -1,6 +1,6 @@
 /**
  * @author Angel Koilov <a.koilov@viscomp.bg> <angel.koilov@gmail.com>
- * @description https://github.com/angelk/CKEditor4Snipped
+ * @description https://github.com/angelk/CKEditor4Snippet
  * @version 0.2
  */
 
@@ -13,16 +13,16 @@ CKEDITOR.plugins.add('snippet', {
             return;
         }
 
-        var buttonLabel = 'Insert Snipped';
+        var buttonLabel = 'Insert Snippet';
         if (snippetConfig.button && snippetConfig.button.label) {
             buttonLabel = snippetConfig.button.label;
         }
 
-        editor.addCommand('showSnipped', new CKEDITOR.dialogCommand('snippetDialog'));
+        editor.addCommand('showSnippet', new CKEDITOR.dialogCommand('snippetDialog'));
 
         editor.ui.addButton('snippet', {
             label: buttonLabel,
-            command: 'showSnipped',
+            command: 'showSnippet',
             toolbar: 'insert'
         });
 
