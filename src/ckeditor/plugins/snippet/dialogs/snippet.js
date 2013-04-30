@@ -1,20 +1,20 @@
-CKEDITOR.dialog.add('snippedDialog', function(editor) {
+CKEDITOR.dialog.add('snippetDialog', function(editor) {
 
     var title = 'Choose Snipped';
-    if (editor.config.snippedConfig.title) {
-        title = editor.config.snippedConfig.title;
+    if (editor.config.snippetConfig.title) {
+        title = editor.config.snippetConfig.title;
     }
 
     var noAvailableSnippets = 'no available snippets';
-    if (editor.config.snippedConfig.noAvailableSnippets) {
-        noAvailableSnippets = editor.config.snippedConfig.noAvailableSnippets;
+    if (editor.config.snippetConfig.noAvailableSnippets) {
+        noAvailableSnippets = editor.config.snippetConfig.noAvailableSnippets;
     }
 
     var contents = null;
-    if (editor.config.snippedConfig.contentsIsCallback) {
-        contents = editor.config.snippedConfig.contents();
+    if (editor.config.snippetConfig.contentsIsCallback) {
+        contents = editor.config.snippetConfig.contents();
     } else {
-        contents = editor.config.snippedConfig.contents;
+        contents = editor.config.snippetConfig.contents;
     }
 
 

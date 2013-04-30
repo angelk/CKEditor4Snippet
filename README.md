@@ -8,11 +8,11 @@ Changes:<br/>
 added custom text for input/labels
 
 Install:
-add `config.extraPlugins = 'snipped';` in config.js file
+add `config.extraPlugins = 'snippet';` in config.js file
 
 Example config:
 ```
-    snippedConfig: {
+    snippetConfig: {
                     contents: [
                         {
                             // Definition of the Basic Settings dialog tab (page).
